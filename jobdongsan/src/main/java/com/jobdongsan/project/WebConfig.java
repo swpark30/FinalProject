@@ -9,5 +9,6 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/upload/**").addResourceLocations("file:///usr/local/project/upload/");
+		registry.addResourceHandler("/local/**").addResourceLocations("file:///C:/springWorkspace/upload/");
 	}
 }
